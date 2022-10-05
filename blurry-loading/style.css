@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg {
+    background: url(https://kenh14cdn.com/thumb_w/660/2019/9/29/dsc02513-2-15697050560381226905011.jpg) no-repeat center center/cover;
+    background-size: cover;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    filter: blur(0px);  
+    z-index: -1;
+}
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+}

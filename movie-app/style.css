@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    height: 80px;
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header input {
+    padding:  0.8rem 1.2rem;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    width: 200px;
+    font-size: 1rem;
+    color: #fff;
+}
+header input::placeholder {
+    color: #7378c5;
+}
+header input:focus {
+    box-shadow: none;
+    outline: none;
+    background-color: var(--primary-color);
+}
+/* main */
+main {
+    width: 90%;
+    margin: 5rem auto;
+    box-sizing: border-box;
+    
+}
+.films {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    -ms-grid-column-align: 10px;
+}
+.film {
+    width: 300px;
+    background-color: var(--secondary-color);
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.film img {
+    width: 100%;
+    object-fit: contain;
+}
+.film .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0.8rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+.film .info .rating {
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 15px;
+    color: yellow;
+    font-weight: 400;
+}
+/* overview */
+.film .intro {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(100%);
+    padding: 3.5rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+}
+.film .intro p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 25px;
+}
+/* hover show overview */
+
+.film:hover .intro {
+    transform: translateY(0);
+}

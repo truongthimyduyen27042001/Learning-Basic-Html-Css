@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+h1 {
+  margin: 50px auto 20px;
+}
+.list-faq {
+  margin: auto;
+  max-width: 600px;
+  list-style: none;
+}
+.item-faq {
+  padding: 2rem 3rem;
+  margin: 1rem auto;
+  border: 1px solid #9fa4a8;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.item-faq.active {
+  box-shadow: 0 3px 6px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 10%);
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question h3 {
+  font-weight: bold;
+  text-align: left;
+  width: 400px;
+}
+.question i {
+  cursor: pointer;
+}
+.question button {
+  border: none;
+  background-color: transparent;
+}
+.question open {
+    display: block;
+}
+.question .close {
+  width: 2rem;
+  height: 2rem;
+  background-color: #9fa4a8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  display: none;
+}
+.item-faq.active .close {
+  display: flex!important;
+}
+.item-faq.active .open {
+  display: none!important;
+}
+.answer {
+  margin-top: 1.5rem;
+  text-align: left;
+  display: none;
+}
+.item-faq.active .answer {
+  display: block !important;
+}
+.item-faq.active::before,
+.item-faq.active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+.item-faq.active::before {
+  transform: rotateY(180deg);
+  top: -5px;
+  left: -20px;
+}

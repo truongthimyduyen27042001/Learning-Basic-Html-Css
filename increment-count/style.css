@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #8e44ad;
+}
+.container {
+    display: flex;
+}
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 50px;
+    cursor: pointer;
+    color: #fff;
+    width: 250px;
+}
+.counter i {
+    font-size: 3rem;
+}
+.counter h1 {
+    font-size: 60px;
+    margin: 10px 0 0 0;
+}
