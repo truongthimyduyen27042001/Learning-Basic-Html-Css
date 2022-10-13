@@ -1,4 +1,4 @@
-# [HTML-CSS] 50 project basic for frontend developer
+# [HTML-CSS] DARK JOKE
 
 ## [Watch it on github](https://github.com/bradtraversy/50projects50days)
 
@@ -7,9 +7,10 @@
 - html
 - css
 - javascript
+- api
 
 I see the UI from source github then I code it and demo it
-![App UI](full-stack-development.gif)
+![App UI](darkjoke.jpg)
 
 
 ### Link document reference: 
